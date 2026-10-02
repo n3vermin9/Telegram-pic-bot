@@ -36,7 +36,7 @@ MAX_API_REQUESTS = 40
 PAGE_SIZE = 20
 TIKWM_INTERVAL = 1.5
 URL_RE = re.compile(r"https://[^\s<>]+", re.IGNORECASE)
-VIDEO_PATH_RE = re.compile(r"/(?:video|v)/(\d+)(?:\.html)?(?:/|$)")
+VIDEO_PATH_RE = re.compile(r"/(?:video|v)/(\d+)(?:\.html)?(?=[/?#]|$)")
 CDN_SUFFIXES = (
     "tiktokcdn.com",
     "tiktokcdn-us.com",
