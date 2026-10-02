@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: tiktok-comment-sticker-bot
+    runtime: docker
+    branch: tiktok-comment-sticker-bot
+    plan: starter
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: LOG_LEVEL
+        value: INFO
