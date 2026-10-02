@@ -21,3 +21,4 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m compileall -q bot.py
       - run: python -m unittest discover -s tests -v
+      - run: BOT_TOKEN=test-token docker compose config --quiet

@@ -1,0 +1,9 @@
+services:
+  bot:
+    build:
+      context: .
+    container_name: tiktok-comment-sticker-bot
+    restart: unless-stopped
+    environment:
+      BOT_TOKEN: ${BOT_TOKEN:?BOT_TOKEN is required}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
