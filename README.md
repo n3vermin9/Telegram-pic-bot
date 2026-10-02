@@ -45,3 +45,14 @@ docker run --rm -e BOT_TOKEN="token from @BotFather" tiktok-comment-sticker-bot
 TikWM's public endpoint is rate limited. The bot spaces requests by 1.5 seconds
 and limits concurrent jobs. Very old comments outside the scanned pages may not
 be found.
+
+
+## Deploy on Render
+
+Create a Blueprint from this branch:
+
+https://dashboard.render.com/blueprint/new?repo=https://github.com/n3vermin9/Telegram-pic-bot
+
+Select the `tiktok-comment-sticker-bot` branch if prompted, then enter
+`BOT_TOKEN` as the worker's secret environment variable. The token is never
+stored in this repository.
