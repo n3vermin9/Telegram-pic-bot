@@ -1,2 +1,3 @@
-aiogram
-ddgs
+aiogram>=3.22,<4
+aiohttp>=3.12,<4
+Pillow>=11.3,<13
